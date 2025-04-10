@@ -49,8 +49,8 @@ function draw() {
 
   // Draw the envelope image at the center of the screen
   imageMode(CENTER); // Draw image from the center
-  image(envelopeImage, width / 2, height / 2, imgWidth, imgHeight);
-
+  image(envelopeImage, width / 2, height / 1.8, imgWidth * 2, imgHeight * 2);
+  
   // Show the cursor as a pointer when it is over the envelope and it's clickable
   if (isEnvelopeClickable && mouseOverEnvelope(imgWidth, imgHeight)) {
     cursor(HAND);  // Change cursor to a hand when mouse is over the envelope
