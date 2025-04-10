@@ -73,6 +73,7 @@ function mousePressed() {
 function mouseOverEnvelope() {
   // Calculate the position and size of the image
   let envelopeImage = isOpen ? redEnvelopeOpen : redEnvelopeClosed;
+
   let imgWidth = envelopeImage.width;
   let imgHeight = envelopeImage.height;
 
@@ -82,9 +83,9 @@ function mouseOverEnvelope() {
 
   // Calculate the bounds of the image
   let x1 = width / 2 - imgWidth / 2;
-  let y1 = height / 2 - imgHeight / 2;
+  let y1 = height / 1.8 - imgHeight / 2;
   let x2 = width / 2 + imgWidth / 2;
-  let y2 = height / 2 + imgHeight / 2;
+  let y2 = height / 1.8 + imgHeight / 2;
 
   // Check if the mouse is inside the bounds of the image
   return (mouseX >= x1 && mouseX <= x2 && mouseY >= y1 && mouseY <= y2);
